@@ -8,6 +8,10 @@
   width: fit-content;
 }
 
+#current-item {
+  color: black;
+}
+
 .navbar-brand {
   width: 4rem;
 }
