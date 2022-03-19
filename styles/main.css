@@ -1,4 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.normal-font {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.nav-item:hover {
+  color: var(--color-current-item);
+}
 
 .montserrat-font {
   font-family: 'Montserrat', sans-serif;
@@ -9,15 +27,110 @@
 }
 
 #current-item {
-  color: black;
+  color: var(--color-current-item);
+}
+
+.navbar {
+  z-index: 999;
+}
+
+.nav-item {
+  padding-left: 2rem;
+}
+
+.center-x {
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.card {
+  background-color: var(--color-main);
+  padding: 2rem;
+  padding-bottom: 2rem;
+  width: 55rem;
+}
+
+.card-sm-header {
+  font-weight: bold;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+}
+
+.card-md-header {
+  font-weight: 300;
+  margin-bottom: 0rem;
+}
+
+.card-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-dark-border);
+  background-color: var(--color-main);
+  font-weight: 300;
+  font-size: 45px;
+}
+
+.card-description {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .navbar-brand {
   width: 4rem;
 }
 
+.bg {
+  background-image: url("../assets/IQ_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed; 
+}
+
+.navbar-light {
+  background-color: var(--color-main);
+}
+
 @media only screen and (max-width: 990px) {
   .fit-content {
     width: 100%;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-description {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 95%;
+    padding-bottom: 4rem;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-description {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .card-header {
+    font-size: 32px;
   }
 }

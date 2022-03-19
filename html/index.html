@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Indie Quest - Welcome</title>
+    <link rel="icon" type="image/x-icon" href="../assets/IQ_favicon_logo.png" />
     <link rel="stylesheet" href="../styles/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
 
-  <body class="montserrat-font">
+  <body class="montserrat-font bg normal-font">
     <nav
       class="navbar navbar-expand-lg navbar-light position-fixed w-100 shadow-sm"
-      style="transition: all 2s"
     >
       <div class="container-fluid m-auto fit-content px-5">
         <a class="navbar-brand me-5" href="index.html"
           ><img
+            alt="The Indie Quest logo"
             class="navbar-brand p-0 rounded"
             src="../assets/IQ_navbar_logo.png"
         /></a>
@@ -60,12 +62,15 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="curriculum.html"
-                    >Programming and production</a
+                  <a class="dropdown-item normal-font" href="curriculum.html"
+                    >Programming and <br />
+                    production</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="curriculum.html">Art</a>
+                  <a class="dropdown-item normal-font" href="curriculum.html"
+                    >Art</a
+                  >
                 </li>
               </ul>
             </li>
@@ -81,7 +86,74 @@
         </div>
       </div>
     </nav>
-    <div class="container"></div>
+
+    <div class="container">
+      <div class="card center-x">
+        <div class="card-body">
+          <div class="text-center">
+            <h1 class="card-title card-header">Welcome to...</h1>
+          </div>
+          <div class="card-description">
+            <div class="row w-100 mt-4">
+              <div class="col-12 col-md-8 pr-4">
+                <h5 class="card-sm-header">
+                  A school for indie game development
+                </h5>
+                <p class="card-text">
+                  The program starts August 16th and you can
+                  <a href="">apply</a> up until June 15th.
+                </p>
+
+                <h5 class="card-sm-header">Learn multiple skill sets.</h5>
+                <p class="card-text">
+                  Once you're done here, you'll be ready to start your own indie
+                  studio or continue studying down the path you felt suited you
+                  the best.
+                </p>
+
+                <h5 class="card-sm-header">Two years in one year.</h5>
+                <p class="card-text">
+                  Time is precious, and with our program we plan to make the
+                  most out of yours. It's going to be a tough but rewarding
+                  journey.
+                </p>
+
+                <h5 class="card-sm-header">Learn from the best.</h5>
+                <p class="card-text">
+                  You're sharing the house with awesome game developers from all
+                  over the world. We're a big team that has each other's backs.
+                </p>
+
+                <h5 class="card-sm-header">Personal responsibility.</h5>
+                <p class="card-text">
+                  There's no tests or teachers hunting you. If you're going to
+                  succeed, you're going to want to study hard.
+                </p>
+              </div>
+              <div class="d-none d-md-inline col-md-4 d-flex flex-column pr-4">
+                <img
+                  class="w-100 my-5 py-3 my-lg-4"
+                  src="../assets/welcome_page/cooking_mechanic.png"
+                  alt="List for a cooking mechanic"
+                />
+
+                <img
+                  class="w-100 my-5 py-3 my-lg-4"
+                  src="../assets/welcome_page/cooking_mechanic.png"
+                  alt="List for a cooking mechanic"
+                />
+
+                <img
+                  class="w-100 my-5 py-3 my-lg-4"
+                  src="../assets/welcome_page/cooking_mechanic.png"
+                  alt="List for a cooking mechanic"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../scripts/bootstrap/bootstrap.bundle.js"></script>
   </body>
