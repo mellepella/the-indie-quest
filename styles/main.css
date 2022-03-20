@@ -30,6 +30,25 @@ body {
   color: var(--color-current-item);
 }
 
+.btn-primary {
+  background-color: var(--color-dark-main);
+  border: none;
+  box-shadow: none;
+
+}
+
+.btn:hover {
+  background-color: var(--color-darker-main);
+  border: none;
+}
+
+.btn:focus, .btn-primary:focus {
+  background-color: var(--color-darker-main);
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
 .navbar {
   z-index: 999;
 }
@@ -102,7 +121,7 @@ body {
   }
 
   .card {
-    width: 70%;
+    width: 100%;
   }
 
   .card-body {
@@ -117,7 +136,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .card {
-    width: 95%;
+    width: 100%;
     padding-bottom: 4rem;
   }
 
