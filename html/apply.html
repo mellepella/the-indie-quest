@@ -110,6 +110,8 @@
                     type="text"
                     name="Social security number (required)"
                     placeholder="YYYY-MMDD-XXXX"
+                    id="social-security-number"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -122,10 +124,12 @@
                 </div>
                 <div class="col-6 col-lg-4">
                   <input
+                    id="first-name"
                     class="w-100"
                     type="text"
                     name="First name (required)"
                     placeholder="Eric"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -138,10 +142,12 @@
                 </div>
                 <div class="col-6 col-lg-4">
                   <input
+                    id="last-name"
                     class="w-100"
                     type="text"
                     name="Last name (required)"
                     placeholder="Ericsson"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -165,10 +171,12 @@
                 </div>
                 <div class="col-6 col-lg-4">
                   <input
+                    id="address"
                     class="w-100"
                     type="text"
                     name="Address (required)"
                     placeholder="Teststreet 33"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -181,10 +189,12 @@
                 </div>
                 <div class="col-6 col-lg-4">
                   <input
+                    id="zip-code"
                     class="w-100"
                     type="text"
                     name="ZIP code (required)"
                     placeholder="111 22"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -196,7 +206,14 @@
                   <p>District*</p>
                 </div>
                 <div class="col-6 col-lg-4">
-                  <input class="w-100" type="text" name="District (required)" />
+                  <input
+                    class="w-100"
+                    type="text"
+                    name="District (required)"
+                    id="district"
+                    placeholder="Stockholm"
+                    required
+                  />
                 </div>
                 <div class="col-0 col-lg-2"></div>
               </div>
@@ -209,9 +226,10 @@
                 <div class="col-6 col-lg-4">
                   <input
                     class="w-100"
-                    type="text"
+                    type="tel"
                     name="Phone"
-                    placeholder="079-1234567"
+                    placeholder="079-123-4567"
+                    required
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
@@ -246,6 +264,7 @@
                     >
                       <option value="1">Phone</option>
                       <option value="2">Email</option>
+                      <option value="3">Sms</option>
                     </select>
                   </div>
                   <div class="col-0 col-lg-2"></div>
@@ -288,7 +307,7 @@
 
                 <div class="row mt-3">
                   <div class="col-0 col-lg-2"></div>
-                  <div class="col-12 col-lg-8">
+                  <div class="col-12 col-lg-8 text-center">
                     <input
                       class="btn btn-primary w-100"
                       type="submit"
