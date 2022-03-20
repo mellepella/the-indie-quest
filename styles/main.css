@@ -135,6 +135,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .normal-font {
+    font-size: 14px;
+  }
+
   .card {
     width: 100%;
     padding-bottom: 4rem;
