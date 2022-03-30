@@ -16,37 +16,24 @@ function citizenshipOnChange({ target }) {
   input.required = !shouldDisable;
 }
 
-// If value is equal to the expected value, the "consequence" function
-// will run. If not, the "otherwise" function will run.
+// Clears all contact requirements.
 
-function equalsOr({ value, expected, consequence, otherwise }) {
-  if (value === expected) {
-    consequence();
-  } else {
-    otherwise();
-  }
-}
-
-// Checks if some sort of contact information has been given.
-// If not, the telephone number is required.
-// This function is set to onchange on the phone and email contact input.
-
-function checkContact() {
+function clearAllContactReqs() {
   const inputs = [
     document.getElementById("phone-contact"),
     document.getElementById("email-contact"),
   ];
+  inputs.forEach((input) => (input.required = false));
+}
 
-  const inputsFilledIn = inputs.filter(({ value }) => value != "").length;
-  const consequence = () => (inputs[0].required = true);
-  const otherwise = () => inputs.forEach((input) => (input.required = false));
+// What happens when the contact select is changed.
+// Clears all contact requirements, then puts a requirement
+// on the one connected to the contact method chosen.
 
-  equalsOr({
-    value: inputsFilledIn,
-    expected: 0,
-    consequence,
-    otherwise,
-  });
+function contactOnChange({ target }) {
+  const { value } = target;
+  clearAllContactReqs();
+  document.getElementById(value).required = true;
 }
 
 // What happens when the apply form is submitted.
