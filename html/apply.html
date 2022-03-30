@@ -229,6 +229,8 @@
                     type="tel"
                     name="Phone"
                     placeholder="079-123-4567"
+                    id="phone-contact"
+                    onchange="checkContact()"
                     required
                   />
                 </div>
@@ -243,9 +245,11 @@
                 <div class="col-6 col-lg-4">
                   <input
                     class="w-100"
-                    type="text"
+                    type="email"
                     name="Email"
                     placeholder="example@test.com"
+                    id="email-contact"
+                    onchange="checkContact()"
                   />
                 </div>
                 <div class="col-0 col-lg-2"></div>
