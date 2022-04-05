@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+input {
+  border: thin solid var(--color-light-border);
+  border-radius: 2px;
+}
+
 .normal-font {
   font-size: 16px;
 }
